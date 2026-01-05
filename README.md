@@ -15,7 +15,7 @@ A modern memory card matching game built with pure JavaScript, featuring multipl
 
 ## Demo
 
-Play the live version at: 
+Play the live version at: https://mind-memory-flip.vercel.app/
 
 ## Installation
 
