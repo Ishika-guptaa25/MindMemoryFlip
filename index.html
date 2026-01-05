@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlipMind - Memory Card Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <header>
+            <h1>FlipMind</h1>
+            <p class="subtitle">Test your memory and concentration</p>
+        </header>
+
+        <div class="controls-panel">
+            <div class="difficulty-buttons">
+                <button class="difficulty-btn active" data-level="easy">Easy</button>
+                <button class="difficulty-btn" data-level="medium">Medium</button>
+                <button class="difficulty-btn" data-level="hard">Hard</button>
+            </div>
+            <button id="reset-btn" class="reset-btn">New Game</button>
+        </div>
+
+        <div class="stats-panel">
+            <div class="stat-card">
+                <div class="stat-label">Time</div>
+                <div id="timer" class="stat-value">1:00</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Moves</div>
+                <div id="moves" class="stat-value">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Best Score</div>
+                <div id="best-score" class="stat-value">-</div>
+            </div>
+        </div>
+
+        <div id="game-board"></div>
+
+        <div id="win-message" class="message-box win-box hidden">
+            <h2>Congratulations!</h2>
+            <p id="win-text"></p>
+            <p id="final-score"></p>
+        </div>
+
+        <div id="lose-message" class="message-box lose-box hidden">
+            <h2>Time's Up!</h2>
+            <p>Better luck next time!</p>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
